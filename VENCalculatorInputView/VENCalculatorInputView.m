@@ -130,6 +130,12 @@
     }
 }
 
+- (void)setNumberButtonTitleColor:(UIColor *)numberButtonTitleColor {
+    for (UIButton *operationButton in self.numberButtonCollection) {
+        [operationButton setTitleColor:numberButtonTitleColor forState:UIControlStateNormal];
+    }
+}
+
 - (void)setOperationButtonBackgroundColor:(UIColor *)operationButtonBackgroundColor {
     _operationButtonBackgroundColor = operationButtonBackgroundColor;
     for (UIButton *operationButton in self.operationButtonCollection) {
@@ -141,6 +147,13 @@
     _operationButtonBorderColor = operationButtonBorderColor;
     for (UIButton *operationButton in self.operationButtonCollection) {
         operationButton.layer.borderColor = operationButtonBorderColor.CGColor;
+    }
+}
+
+- (void)setOperationButtonTitleColor:(UIColor *)operationButtonTitleColor {
+    _operationButtonTitleColor = operationButtonTitleColor;
+    for (UIButton *operationButton in self.operationButtonCollection) {
+        [operationButton setTitleColor:operationButtonTitleColor forState:UIControlStateNormal];
     }
 }
 
