@@ -36,8 +36,10 @@
 
 @property (strong, nonatomic) UIColor *numberButtonBackgroundColor;
 @property (strong, nonatomic) UIColor *numberButtonBorderColor;
+@property (strong, nonatomic) UIColor *numberButtonTitleColor;
 
 @property (strong, nonatomic) UIColor *operationButtonBackgroundColor;
 @property (strong, nonatomic) UIColor *operationButtonBorderColor;
+@property (strong, nonatomic) UIColor *operationButtonTitleColor;
 
 @end
